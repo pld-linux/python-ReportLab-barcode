@@ -1,7 +1,7 @@
 Summary:	The barcode extension for ReportLab
 Name:		python-ReportLab-barcode
 Version:	0.9.2
-Release:	4
+Release:	5
 License:	distributable
 Group:		Libraries/Python
 Source0:	http://www.reportlab.com/ftp/extensions/rlbarcode-%{version}.tgz
@@ -40,5 +40,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%dir %{py_sitescriptdir}/reportlab/extensions
 %dir %{py_sitescriptdir}/reportlab/extensions/barcode
 %{py_sitescriptdir}/reportlab/extensions/barcode/*.py[co]
